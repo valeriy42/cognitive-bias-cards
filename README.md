@@ -17,4 +17,6 @@ different categories of biases:
 
 The generated cards are stored in `allcards.pdf`.
 To re-generate the cards use the command
-```make all```
+```
+make all
+```
