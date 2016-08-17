@@ -1,0 +1,3730 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=1cm]{geometry}
+\usepackage{tikz}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{color}
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of
+                                %% the document is to be sans serif
+
+\definecolor{decision}{RGB}{0,160,62}
+\definecolor{social}{RGB}{0,135,203}
+\definecolor{memory}{RGB}{255,162,0}
+
+\pgfmathsetmacro{\cardwidth}{6.3}
+\pgfmathsetmacro{\cardheight}{8.8}
+\pgfmathsetmacro{\stripheight}{1.9}
+\pgfmathsetmacro{\strippadding}{0.2}
+\pgfmathsetmacro{\contentheight}{6.36}
+\pgfmathsetmacro{\textpadding}{0.3}
+
+\pgfmathsetmacro{\ruleheight}{0.1}
+\newcommand{\stripfontsize}{\Large}
+\newcommand{\textfontsize}{\large}
+
+\newcommand{\stripcolor}{}
+\newcommand{\striptext}{}
+\newcommand{\stripnumber}{}
+\newcommand{\descrtext}{}
+
+\begin{document}
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Ambiguity effect}}}%
+\renewcommand{\stripnumber}{\#1}%
+\renewcommand{\descrtext}{{The tendency to avoid options for which missing information makes the probability seem "unknown".}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Anchoring or focalism}}}%
+\renewcommand{\stripnumber}{\#2}%
+\renewcommand{\descrtext}{{The tendency to rely too heavily, or "anchor", on one trait or piece of information when making decisions (usually the first piece of information that we acquire on that subject)}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Anthropomorphism}}}%
+\renewcommand{\stripnumber}{\#3}%
+\renewcommand{\descrtext}{{The tendency to characterize animals, objects, and abstract concepts as possessing human-like traits, emotions, and intentions.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Attentional bias}}}%
+\renewcommand{\stripnumber}{\#4}%
+\renewcommand{\descrtext}{{The tendency of our perception to be affected by our recurring thoughts.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Automation bias}}}%
+\renewcommand{\stripnumber}{\#5}%
+\renewcommand{\descrtext}{{The tendency to excessively depend on automated systems which can lead to erroneous automated information overriding correct decisions.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Availability heuristic}}}%
+\renewcommand{\stripnumber}{\#6}%
+\renewcommand{\descrtext}{{The tendency to overestimate the likelihood of events with greater "availability" in memory, which can be influenced by how recent the memories are or how unusual or emotionally charged they may be.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Availability cascade}}}%
+\renewcommand{\stripnumber}{\#7}%
+\renewcommand{\descrtext}{{A self-reinforcing process in which a collective belief gains more and more plausibility through its increasing repetition in public discourse (or "repeat something long enough and it will become true").}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Backfire effect}}}%
+\renewcommand{\stripnumber}{\#8}%
+\renewcommand{\descrtext}{{The reaction to disconfirming evidence by strengthening one's previous beliefs. cf. Continued influence effect.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Bandwagon effect}}}%
+\renewcommand{\stripnumber}{\#9}%
+\renewcommand{\descrtext}{{The tendency to do (or believe) things because many other people do (or believe) the same. Related to groupthink and herd behavior.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Base rate fallacy or Base rate neglect}}}%
+\renewcommand{\stripnumber}{\#10}%
+\renewcommand{\descrtext}{{The tendency to ignore base rate information (generic, general information) and focus on specific information (information only pertaining to a certain case).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Belief bias}}}%
+\renewcommand{\stripnumber}{\#11}%
+\renewcommand{\descrtext}{{An effect where someone's evaluation of the logical strength of an argument is biased by the believability of the conclusion.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Bias blind spot}}}%
+\renewcommand{\stripnumber}{\#12}%
+\renewcommand{\descrtext}{{The tendency to see oneself as less biased than other people, or to be able to identify more cognitive biases in others than in oneself.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Cheerleader effect}}}%
+\renewcommand{\stripnumber}{\#13}%
+\renewcommand{\descrtext}{{The tendency for people to appear more attractive in a group than in isolation.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Choice-supportive bias}}}%
+\renewcommand{\stripnumber}{\#14}%
+\renewcommand{\descrtext}{{The tendency to remember one's choices as better than they actually were.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Clustering illusion}}}%
+\renewcommand{\stripnumber}{\#15}%
+\renewcommand{\descrtext}{{The tendency to overestimate the importance of small runs, streaks, or clusters in large samples of random data (that is, seeing phantom patterns).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Confirmation bias}}}%
+\renewcommand{\stripnumber}{\#16}%
+\renewcommand{\descrtext}{{The tendency to search for, interpret, focus on and remember information in a way that confirms one's preconceptions.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Congruence bias}}}%
+\renewcommand{\stripnumber}{\#17}%
+\renewcommand{\descrtext}{{The tendency to test hypotheses exclusively through direct testing, instead of testing possible alternative hypotheses.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Conjunction fallacy}}}%
+\renewcommand{\stripnumber}{\#18}%
+\renewcommand{\descrtext}{{The tendency to assume that specific conditions are more probable than general ones.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Conservatism (belief revision)}}}%
+\renewcommand{\stripnumber}{\#19}%
+\renewcommand{\descrtext}{{The tendency to revise one's belief insufficiently when presented with new evidence.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Continued influence effect}}}%
+\renewcommand{\stripnumber}{\#20}%
+\renewcommand{\descrtext}{{The tendency to believe previously learned misinformation even after it has been corrected. Misinformation can still influence inferences one generates after a correction has occurred. cf. Backfire effect}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Contrast effect}}}%
+\renewcommand{\stripnumber}{\#21}%
+\renewcommand{\descrtext}{{The enhancement or reduction of a certain perception's stimuli when compared with a recently observed, contrasting object.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Curse of knowledge}}}%
+\renewcommand{\stripnumber}{\#22}%
+\renewcommand{\descrtext}{{When better-informed people find it extremely difficult to think about problems from the perspective of lesser-informed people.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Declinism}}}%
+\renewcommand{\stripnumber}{\#23}%
+\renewcommand{\descrtext}{{The belief that a society or institution is tending towards decline. Particularly, it is the predisposition to view the past favourably and future negatively.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Decoy effect}}}%
+\renewcommand{\stripnumber}{\#24}%
+\renewcommand{\descrtext}{{Preferences for either option A or B changes in favor of option B when option C is presented, which is similar to option B but in no way better.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Denomination effect}}}%
+\renewcommand{\stripnumber}{\#25}%
+\renewcommand{\descrtext}{{The tendency to spend more money when it is denominated in small amounts (e.g., coins) rather than large amounts (e.g., bills).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Disposition effect}}}%
+\renewcommand{\stripnumber}{\#26}%
+\renewcommand{\descrtext}{{The tendency to sell an asset that has accumulated in value and resist selling an asset that has declined in value.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Distinction bias}}}%
+\renewcommand{\stripnumber}{\#27}%
+\renewcommand{\descrtext}{{The tendency to view two options as more dissimilar when evaluating them simultaneously than when evaluating them separately.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Dunning-Kruger effect}}}%
+\renewcommand{\stripnumber}{\#28}%
+\renewcommand{\descrtext}{{The tendency for unskilled individuals to overestimate their own ability and the tendency for experts to underestimate their own ability.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Duration neglect}}}%
+\renewcommand{\stripnumber}{\#29}%
+\renewcommand{\descrtext}{{The neglect of the duration of an episode in determining its value}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Empathy gap}}}%
+\renewcommand{\stripnumber}{\#30}%
+\renewcommand{\descrtext}{{The tendency to underestimate the influence or strength of feelings, in either oneself or others.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Endowment effect}}}%
+\renewcommand{\stripnumber}{\#31}%
+\renewcommand{\descrtext}{{The tendency for people to demand much more to give up an object than they would be willing to pay to acquire it.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Essentialism}}}%
+\renewcommand{\stripnumber}{\#32}%
+\renewcommand{\descrtext}{{Categorizing people and things according to their essential nature, in spite of variations.[dubious – discuss]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Exaggerated expectation}}}%
+\renewcommand{\stripnumber}{\#33}%
+\renewcommand{\descrtext}{{Based on the estimates, real-world evidence turns out to be less extreme than our expectations (conditionally inverse of the conservatism bias).[unreliable source?]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Experimenter's or expectation bias}}}%
+\renewcommand{\stripnumber}{\#34}%
+\renewcommand{\descrtext}{{The tendency for experimenters to believe, certify, and publish data that agree with their expectations for the outcome of an experiment, and to disbelieve, discard, or downgrade the corresponding weightings for data that appear to conflict with those expectations.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Focusing effect}}}%
+\renewcommand{\stripnumber}{\#35}%
+\renewcommand{\descrtext}{{The tendency to place too much importance on one aspect of an event.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Forer effect or Barnum effect}}}%
+\renewcommand{\stripnumber}{\#36}%
+\renewcommand{\descrtext}{{The observation that individuals will give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people. This effect can provide a partial explanation for the widespread acceptance of some beliefs and practices, such as astrology, fortune telling, graphology, and some types of personality tests.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Framing effect}}}%
+\renewcommand{\stripnumber}{\#37}%
+\renewcommand{\descrtext}{{Drawing different conclusions from the same information, depending on how that information is presented}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Frequency illusion}}}%
+\renewcommand{\stripnumber}{\#38}%
+\renewcommand{\descrtext}{{The illusion in which a word, a name, or other thing that has recently come to one's attention suddenly seems to appear with improbable frequency shortly afterwards (not to be confused with the recency illusion or selection bias). Colloquially, this illusion is known as the Baader-Meinhof Phenomenon.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Functional fixedness}}}%
+\renewcommand{\stripnumber}{\#39}%
+\renewcommand{\descrtext}{{Limits a person to using an object only in the way it is traditionally used.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Gambler's fallacy}}}%
+\renewcommand{\stripnumber}{\#40}%
+\renewcommand{\descrtext}{{The tendency to think that future probabilities are altered by past events, when in reality they are unchanged. The fallacy arises from an erroneous conceptualization of the law of large numbers. For example, "I've flipped heads with this coin five times consecutively, so the chance of tails coming out on the sixth flip is much greater than heads."}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Hard–easy effect}}}%
+\renewcommand{\stripnumber}{\#41}%
+\renewcommand{\descrtext}{{Based on a specific level of task difficulty, the confidence in judgments is too conservative and not extreme enough}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Hindsight bias}}}%
+\renewcommand{\stripnumber}{\#42}%
+\renewcommand{\descrtext}{{Sometimes called the "I-knew-it-all-along" effect, the tendency to see past events as being predictable at the time those events happened.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Hot-hand fallacy}}}%
+\renewcommand{\stripnumber}{\#43}%
+\renewcommand{\descrtext}{{The "hot-hand fallacy" (also known as the "hot hand phenomenon" or "hot hand") is the fallacious belief that a person who has experienced success with a random event has a greater chance of further success in additional attempts.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Hyperbolic discounting}}}%
+\renewcommand{\stripnumber}{\#44}%
+\renewcommand{\descrtext}{{Discounting is the tendency for people to have a stronger preference for more immediate payoffs relative to later payoffs. Hyperbolic discounting leads to choices that are inconsistent over time – people make choices today that their future selves would prefer not to have made, despite using the same reasoning. Also known as current moment bias, present-bias, and related to Dynamic inconsistency.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Identifiable victim effect}}}%
+\renewcommand{\stripnumber}{\#45}%
+\renewcommand{\descrtext}{{The tendency to respond more strongly to a single identified person at risk than to a large group of people at risk.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{IKEA effect}}}%
+\renewcommand{\stripnumber}{\#46}%
+\renewcommand{\descrtext}{{The tendency for people to place a disproportionately high value on objects that they partially assembled themselves, such as furniture from IKEA, regardless of the quality of the end result.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Illusion of control}}}%
+\renewcommand{\stripnumber}{\#47}%
+\renewcommand{\descrtext}{{The tendency to overestimate one's degree of influence over other external events.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Illusion of validity}}}%
+\renewcommand{\stripnumber}{\#48}%
+\renewcommand{\descrtext}{{Belief that furtherly acquired information generates additional relevant data for predictions, even when it evidently does not.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Illusory correlation}}}%
+\renewcommand{\stripnumber}{\#49}%
+\renewcommand{\descrtext}{{Inaccurately perceiving a relationship between two unrelated events.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Impact bias}}}%
+\renewcommand{\stripnumber}{\#50}%
+\renewcommand{\descrtext}{{The tendency to overestimate the length or the intensity of the impact of future feeling states.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Information bias}}}%
+\renewcommand{\stripnumber}{\#51}%
+\renewcommand{\descrtext}{{The tendency to seek information even when it cannot affect action.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Insensitivity to sample size}}}%
+\renewcommand{\stripnumber}{\#52}%
+\renewcommand{\descrtext}{{The tendency to under-expect variation in small samples.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Irrational escalation}}}%
+\renewcommand{\stripnumber}{\#53}%
+\renewcommand{\descrtext}{{The phenomenon where people justify increased investment in a decision, based on the cumulative prior investment, despite new evidence suggesting that the decision was probably wrong. Also known as the sunk cost fallacy.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Less-is-better effect}}}%
+\renewcommand{\stripnumber}{\#54}%
+\renewcommand{\descrtext}{{The tendency to prefer a smaller set to a larger set judged separately, but not jointly.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Loss aversion}}}%
+\renewcommand{\stripnumber}{\#55}%
+\renewcommand{\descrtext}{{The disutility of giving up an object is greater than the utility associated with acquiring it. (see also Sunk cost effects and endowment effect).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Mere exposure effect}}}%
+\renewcommand{\stripnumber}{\#56}%
+\renewcommand{\descrtext}{{The tendency to express undue liking for things merely because of familiarity with them.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Money illusion}}}%
+\renewcommand{\stripnumber}{\#57}%
+\renewcommand{\descrtext}{{The tendency to concentrate on the nominal value (face value) of money rather than its value in terms of purchasing power.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Moral credential effect}}}%
+\renewcommand{\stripnumber}{\#58}%
+\renewcommand{\descrtext}{{The tendency of a track record of non-prejudice to increase subsequent prejudice.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Negativity bias or Negativity effect}}}%
+\renewcommand{\stripnumber}{\#59}%
+\renewcommand{\descrtext}{{Psychological phenomenon by which humans have a greater recall of unpleasant memories compared with positive memories.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Neglect of probability}}}%
+\renewcommand{\stripnumber}{\#60}%
+\renewcommand{\descrtext}{{The tendency to completely disregard probability when making a decision under uncertainty.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Normalcy bias}}}%
+\renewcommand{\stripnumber}{\#61}%
+\renewcommand{\descrtext}{{The refusal to plan for, or react to, a disaster which has never happened before.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Not invented here}}}%
+\renewcommand{\stripnumber}{\#62}%
+\renewcommand{\descrtext}{{Aversion to contact with or use of products, research, standards, or knowledge developed outside a group. Related to IKEA effect.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Observer-expectancy effect}}}%
+\renewcommand{\stripnumber}{\#63}%
+\renewcommand{\descrtext}{{When a researcher expects a given result and therefore unconsciously manipulates an experiment or misinterprets data in order to find it (see also subject-expectancy effect).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Omission bias}}}%
+\renewcommand{\stripnumber}{\#64}%
+\renewcommand{\descrtext}{{The tendency to judge harmful actions as worse, or less moral, than equally harmful omissions (inactions).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Optimism bias}}}%
+\renewcommand{\stripnumber}{\#65}%
+\renewcommand{\descrtext}{{The tendency to be over-optimistic, overestimating favorable and pleasing outcomes (see also wishful thinking, valence effect, positive outcome bias).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Ostrich effect}}}%
+\renewcommand{\stripnumber}{\#66}%
+\renewcommand{\descrtext}{{Ignoring an obvious (negative) situation.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Outcome bias}}}%
+\renewcommand{\stripnumber}{\#67}%
+\renewcommand{\descrtext}{{The tendency to judge a decision by its eventual outcome instead of based on the quality of the decision at the time it was made.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Overconfidence effect}}}%
+\renewcommand{\stripnumber}{\#68}%
+\renewcommand{\descrtext}{{Excessive confidence in one's own answers to questions. For example, for certain types of questions, answers that people rate as "99\% certain" turn out to be wrong 40\% of the time.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Pareidolia}}}%
+\renewcommand{\stripnumber}{\#69}%
+\renewcommand{\descrtext}{{A vague and random stimulus (often an image or sound) is perceived as significant, e.g., seeing images of animals or faces in clouds, the man in the moon, and hearing non-existent hidden messages on records played in reverse.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Pessimism bias}}}%
+\renewcommand{\stripnumber}{\#70}%
+\renewcommand{\descrtext}{{The tendency for some people, especially those suffering from depression, to overestimate the likelihood of negative things happening to them.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Planning fallacy}}}%
+\renewcommand{\stripnumber}{\#71}%
+\renewcommand{\descrtext}{{The tendency to underestimate task-completion times.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Post-purchase rationalization}}}%
+\renewcommand{\stripnumber}{\#72}%
+\renewcommand{\descrtext}{{The tendency to persuade oneself through rational argument that a purchase was good value.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Pro-innovation bias}}}%
+\renewcommand{\stripnumber}{\#73}%
+\renewcommand{\descrtext}{{The tendency to have an excessive optimism towards an invention or innovation's usefulness throughout society, while often failing to identify its limitations and weaknesses.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Projection bias}}}%
+\renewcommand{\stripnumber}{\#74}%
+\renewcommand{\descrtext}{{The tendency to overestimate how much our future selves share one's current preferences, thoughts and values, thus leading to sub-optimal choices.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Pseudocertainty effect}}}%
+\renewcommand{\stripnumber}{\#75}%
+\renewcommand{\descrtext}{{The tendency to make risk-averse choices if the expected outcome is positive, but make risk-seeking choices to avoid negative outcomes.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Reactance}}}%
+\renewcommand{\stripnumber}{\#76}%
+\renewcommand{\descrtext}{{The urge to do the opposite of what someone wants you to do out of a need to resist a perceived attempt to constrain your freedom of choice (see also Reverse psychology).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Reactive devaluation}}}%
+\renewcommand{\stripnumber}{\#77}%
+\renewcommand{\descrtext}{{Devaluing proposals only because they purportedly originated with an adversary.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Recency illusion}}}%
+\renewcommand{\stripnumber}{\#78}%
+\renewcommand{\descrtext}{{The illusion that a word or language usage is a recent innovation when it is in fact long-established (see also frequency illusion).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Regressive bias}}}%
+\renewcommand{\stripnumber}{\#79}%
+\renewcommand{\descrtext}{{A certain state of mind wherein high values and high likelihoods are overestimated while low values and low likelihoods are underestimated.[unreliable source?]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Restraint bias}}}%
+\renewcommand{\stripnumber}{\#80}%
+\renewcommand{\descrtext}{{The tendency to overestimate one's ability to show restraint in the face of temptation.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Rhyme as reason effect}}}%
+\renewcommand{\stripnumber}{\#81}%
+\renewcommand{\descrtext}{{Rhyming statements are perceived as more truthful. A famous example being used in the O.J Simpson trial with the defense's use of the phrase "If the gloves don't fit, then you must acquit."}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Risk compensation / Peltzman effect}}}%
+\renewcommand{\stripnumber}{\#82}%
+\renewcommand{\descrtext}{{The tendency to take greater risks when perceived safety increases.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Selective perception}}}%
+\renewcommand{\stripnumber}{\#83}%
+\renewcommand{\descrtext}{{The tendency for expectations to affect perception.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Semmelweis reflex}}}%
+\renewcommand{\stripnumber}{\#84}%
+\renewcommand{\descrtext}{{The tendency to reject new evidence that contradicts a paradigm.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Social comparison bias}}}%
+\renewcommand{\stripnumber}{\#85}%
+\renewcommand{\descrtext}{{The tendency, when making hiring decisions, to favour potential candidates who don't compete with one's own particular strengths.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Social desirability bias}}}%
+\renewcommand{\stripnumber}{\#86}%
+\renewcommand{\descrtext}{{The tendency to over-report socially desirable characteristics or behaviours in oneself and under-report socially undesirable characteristics or behaviours.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Status quo bias}}}%
+\renewcommand{\stripnumber}{\#87}%
+\renewcommand{\descrtext}{{The tendency to like things to stay relatively the same (see also loss aversion, endowment effect, and system justification).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Stereotyping}}}%
+\renewcommand{\stripnumber}{\#88}%
+\renewcommand{\descrtext}{{Expecting a member of a group to have certain characteristics without having actual information about that individual.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Subadditivity effect}}}%
+\renewcommand{\stripnumber}{\#89}%
+\renewcommand{\descrtext}{{The tendency to judge probability of the whole to be less than the probabilities of the parts.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Subjective validation}}}%
+\renewcommand{\stripnumber}{\#90}%
+\renewcommand{\descrtext}{{Perception that something is true if a subject's belief demands it to be true. Also assigns perceived connections between coincidences.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Survivorship bias}}}%
+\renewcommand{\stripnumber}{\#91}%
+\renewcommand{\descrtext}{{Concentrating on the people or things that "survived" some process and inadvertently overlooking those that didn't because of their lack of visibility.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Time-saving bias}}}%
+\renewcommand{\stripnumber}{\#92}%
+\renewcommand{\descrtext}{{Underestimations of the time that could be saved (or lost) when increasing (or decreasing) from a relatively low speed and overestimations of the time that could be saved (or lost) when increasing (or decreasing) from a relatively high speed.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Third-person effect}}}%
+\renewcommand{\stripnumber}{\#93}%
+\renewcommand{\descrtext}{{Belief that that mass communicated media messages have a greater effect on others than on themselves.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Triviality / Parkinson's Law of}}}%
+\renewcommand{\stripnumber}{\#94}%
+\renewcommand{\descrtext}{{The tendency to give disproportionate weight to trivial issues. Also known as bikeshedding, this bias explains why an organization may avoid specialized or complex subjects, such as the design of a nuclear reactor, and instead focus on something easy to grasp or rewarding to the average participant, such as the design of an adjacent bike shed.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Unit bias}}}%
+\renewcommand{\stripnumber}{\#95}%
+\renewcommand{\descrtext}{{The tendency to want to finish a given unit of a task or an item. Strong effects on the consumption of food in particular.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Weber–Fechner law}}}%
+\renewcommand{\stripnumber}{\#96}%
+\renewcommand{\descrtext}{{Difficulty in comparing small differences in large quantities.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Well travelled road effect}}}%
+\renewcommand{\stripnumber}{\#97}%
+\renewcommand{\descrtext}{{Underestimation of the duration taken to traverse oft-traveled routes and overestimation of the duration taken to traverse less familiar routes.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Zero-risk bias}}}%
+\renewcommand{\stripnumber}{\#98}%
+\renewcommand{\descrtext}{{Preference for reducing a small risk to zero over a greater reduction in a larger risk.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{decision}%
+\renewcommand{\striptext}{{\textsc{Zero-sum heuristic}}}%
+\renewcommand{\stripnumber}{\#99}%
+\renewcommand{\descrtext}{{Intuitively judging a situation to be zero-sum (i.e., that gains and losses are correlated). Derives from the zero-sum game in game theory, where wins and losses sum to zero. The frequency with which this bias occurs may be related to the social dominance orientation personality factor.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Actor-observer bias}}}%
+\renewcommand{\stripnumber}{\#100}%
+\renewcommand{\descrtext}{{The tendency for explanations of other individuals' behaviors to overemphasize the influence of their personality and underemphasize the influence of their situation (see also Fundamental attribution error), and for explanations of one's own behaviors to do the opposite (that is, to overemphasize the influence of our situation and underemphasize the influence of our own personality).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Defensive attribution hypothesis}}}%
+\renewcommand{\stripnumber}{\#101}%
+\renewcommand{\descrtext}{{Attributing more blame to a harm-doer as the outcome becomes more severe or as personal or situational similarity to the victim increases.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Egocentric bias}}}%
+\renewcommand{\stripnumber}{\#102}%
+\renewcommand{\descrtext}{{Occurs when people claim more responsibility for themselves for the results of a joint action than an outside observer would credit them with.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Extrinsic incentives bias}}}%
+\renewcommand{\stripnumber}{\#103}%
+\renewcommand{\descrtext}{{An exception to the fundamental attribution error, when people view others as having (situational) extrinsic motivations and (dispositional) intrinsic motivations for oneself}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{False consensus effect}}}%
+\renewcommand{\stripnumber}{\#104}%
+\renewcommand{\descrtext}{{The tendency for people to overestimate the degree to which others agree with them.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Forer effect (aka Barnum effect)}}}%
+\renewcommand{\stripnumber}{\#105}%
+\renewcommand{\descrtext}{{The tendency to give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people. For example, horoscopes.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Fundamental attribution error}}}%
+\renewcommand{\stripnumber}{\#106}%
+\renewcommand{\descrtext}{{The tendency for people to over-emphasize personality-based explanations for behaviors observed in others while under-emphasizing the role and power of situational influences on the same behavior (see also actor-observer bias, group attribution error, positivity effect, and negativity effect).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Group attribution error}}}%
+\renewcommand{\stripnumber}{\#107}%
+\renewcommand{\descrtext}{{The biased belief that the characteristics of an individual group member are reflective of the group as a whole or the tendency to assume that group decision outcomes reflect the preferences of group members, even when information is available that clearly suggests otherwise.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Halo effect}}}%
+\renewcommand{\stripnumber}{\#108}%
+\renewcommand{\descrtext}{{The tendency for a person's positive or negative traits to "spill over" from one personality area to another in others' perceptions of them (see also physical attractiveness stereotype).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Illusion of asymmetric insight}}}%
+\renewcommand{\stripnumber}{\#109}%
+\renewcommand{\descrtext}{{People perceive their knowledge of their peers to surpass their peers' knowledge of them.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Illusion of external agency}}}%
+\renewcommand{\stripnumber}{\#110}%
+\renewcommand{\descrtext}{{When people view self-generated preferences as instead being caused by insightful, effective and benevolent agents}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Illusion of transparency}}}%
+\renewcommand{\stripnumber}{\#111}%
+\renewcommand{\descrtext}{{People overestimate others' ability to know them, and they also overestimate their ability to know others.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Illusory superiority}}}%
+\renewcommand{\stripnumber}{\#112}%
+\renewcommand{\descrtext}{{Overestimating one's desirable qualities, and underestimating undesirable qualities, relative to other people. (Also known as "Lake Wobegon effect", "better-than-average effect", or "superiority bias".)}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Ingroup bias}}}%
+\renewcommand{\stripnumber}{\#113}%
+\renewcommand{\descrtext}{{The tendency for people to give preferential treatment to others they perceive to be members of their own groups.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Just-world hypothesis}}}%
+\renewcommand{\stripnumber}{\#114}%
+\renewcommand{\descrtext}{{The tendency for people to want to believe that the world is fundamentally just, causing them to rationalize an otherwise inexplicable injustice as deserved by the victim(s).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Moral luck}}}%
+\renewcommand{\stripnumber}{\#115}%
+\renewcommand{\descrtext}{{The tendency for people to ascribe greater or lesser moral standing based on the outcome of an event.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Naïve cynicism}}}%
+\renewcommand{\stripnumber}{\#116}%
+\renewcommand{\descrtext}{{Expecting more egocentric bias in others than in oneself.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Naïve realism}}}%
+\renewcommand{\stripnumber}{\#117}%
+\renewcommand{\descrtext}{{The belief that we see reality as it really is – objectively and without bias; that the facts are plain for all to see; that rational people will agree with us; and that those who don't are either uninformed, lazy, irrational, or biased.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Outgroup homogeneity bias}}}%
+\renewcommand{\stripnumber}{\#118}%
+\renewcommand{\descrtext}{{Individuals see members of their own group as being relatively more varied than members of other groups.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Self-serving bias}}}%
+\renewcommand{\stripnumber}{\#119}%
+\renewcommand{\descrtext}{{The tendency to claim more responsibility for successes than failures. It may also manifest itself as a tendency for people to evaluate ambiguous information in a way beneficial to their interests (see also group-serving bias).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Shared information bias}}}%
+\renewcommand{\stripnumber}{\#120}%
+\renewcommand{\descrtext}{{Known as the tendency for group members to spend more time and energy discussing information that all members are already familiar with (i.e., shared information), and less time and energy discussing information that only some members are aware of (i.e., unshared information).}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{System justification}}}%
+\renewcommand{\stripnumber}{\#121}%
+\renewcommand{\descrtext}{{The tendency to defend and bolster the status quo. Existing social, economic, and political arrangements tend to be preferred, and alternatives disparaged, sometimes even at the expense of individual and collective self-interest. (See also status quo bias.)}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Trait ascription bias}}}%
+\renewcommand{\stripnumber}{\#122}%
+\renewcommand{\descrtext}{{The tendency for people to view themselves as relatively variable in terms of personality, behavior, and mood while viewing others as much more predictable.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Ultimate attribution error}}}%
+\renewcommand{\stripnumber}{\#123}%
+\renewcommand{\descrtext}{{Similar to the fundamental attribution error, in this error a person is likely to make an internal attribution to an entire group instead of the individuals within the group.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{social}%
+\renewcommand{\striptext}{{\textsc{Worse-than-average effect}}}%
+\renewcommand{\stripnumber}{\#124}%
+\renewcommand{\descrtext}{{A tendency to believe ourselves to be worse than others at tasks which are difficult.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Bizarreness effect}}}%
+\renewcommand{\stripnumber}{\#125}%
+\renewcommand{\descrtext}{{Bizarre material is better remembered than common material.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Choice-supportive bias}}}%
+\renewcommand{\stripnumber}{\#126}%
+\renewcommand{\descrtext}{{In a self-justifying manner retroactively ascribing one's choices to be more informed than they were when they were made.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Change bias}}}%
+\renewcommand{\stripnumber}{\#127}%
+\renewcommand{\descrtext}{{After an investment of effort in producing change, remembering one's past performance as more difficult than it actually was[unreliable source?]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Childhood amnesia}}}%
+\renewcommand{\stripnumber}{\#128}%
+\renewcommand{\descrtext}{{The retention of few memories from before the age of four.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Conservatism or Regressive bias}}}%
+\renewcommand{\stripnumber}{\#129}%
+\renewcommand{\descrtext}{{Tendency to remember high values and high likelihoods/probabilities/frequencies as lower than they actually were and low ones as higher than they actually were. Based on the evidence, memories are not extreme enough}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Consistency bias}}}%
+\renewcommand{\stripnumber}{\#130}%
+\renewcommand{\descrtext}{{Incorrectly remembering one's past attitudes and behaviour as resembling present attitudes and behaviour.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Context effect}}}%
+\renewcommand{\stripnumber}{\#131}%
+\renewcommand{\descrtext}{{That cognition and memory are dependent on context, such that out-of-context memories are more difficult to retrieve than in-context memories (e.g., recall time and accuracy for a work-related memory will be lower at home, and vice versa)}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Cross-race effect}}}%
+\renewcommand{\stripnumber}{\#132}%
+\renewcommand{\descrtext}{{The tendency for people of one race to have difficulty identifying members of a race other than their own.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Cryptomnesia}}}%
+\renewcommand{\stripnumber}{\#133}%
+\renewcommand{\descrtext}{{A form of misattribution where a memory is mistaken for imagination, because there is no subjective experience of it being a memory.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Egocentric bias}}}%
+\renewcommand{\stripnumber}{\#134}%
+\renewcommand{\descrtext}{{Recalling the past in a self-serving manner, e.g., remembering one's exam grades as being better than they were, or remembering a caught fish as bigger than it really was.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Fading affect bias}}}%
+\renewcommand{\stripnumber}{\#135}%
+\renewcommand{\descrtext}{{A bias in which the emotion associated with unpleasant memories fades more quickly than the emotion associated with positive events.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{False memory}}}%
+\renewcommand{\stripnumber}{\#136}%
+\renewcommand{\descrtext}{{A form of misattribution where imagination is mistaken for a memory.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Generation effect (Self-generation effect)}}}%
+\renewcommand{\stripnumber}{\#137}%
+\renewcommand{\descrtext}{{That self-generated information is remembered best. For instance, people are better able to recall memories of statements that they have generated than similar statements generated by others.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Google effect}}}%
+\renewcommand{\stripnumber}{\#138}%
+\renewcommand{\descrtext}{{The tendency to forget information that can be found readily online by using Internet search engines.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Hindsight bias}}}%
+\renewcommand{\stripnumber}{\#139}%
+\renewcommand{\descrtext}{{The inclination to see past events as being more predictable than they actually were; also called the "I-knew-it-all-along" effect.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Humor effect}}}%
+\renewcommand{\stripnumber}{\#140}%
+\renewcommand{\descrtext}{{That humorous items are more easily remembered than non-humorous ones, which might be explained by the distinctiveness of humor, the increased cognitive processing time to understand the humor, or the emotional arousal caused by the humor.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Illusion of truth effect}}}%
+\renewcommand{\stripnumber}{\#141}%
+\renewcommand{\descrtext}{{That people are more likely to identify as true statements those they have previously heard (even if they cannot consciously remember having heard them), regardless of the actual validity of the statement. In other words, a person is more likely to believe a familiar statement than an unfamiliar one.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Illusory correlation}}}%
+\renewcommand{\stripnumber}{\#142}%
+\renewcommand{\descrtext}{{Inaccurately remembering a relationship between two events.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Lag effect}}}%
+\renewcommand{\stripnumber}{\#143}%
+\renewcommand{\descrtext}{{See spacing effect.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Leveling and Sharpening}}}%
+\renewcommand{\stripnumber}{\#144}%
+\renewcommand{\descrtext}{{Memory distortions introduced by the loss of details in a recollection over time, often concurrent with sharpening or selective recollection of certain details that take on exaggerated significance in relation to the details or aspects of the experience lost through leveling. Both biases may be reinforced over time, and by repeated recollection or re-telling of a memory.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Levels-of-processing effect}}}%
+\renewcommand{\stripnumber}{\#145}%
+\renewcommand{\descrtext}{{That different methods of encoding information into memory have different levels of effectiveness.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{List-length effect}}}%
+\renewcommand{\stripnumber}{\#146}%
+\renewcommand{\descrtext}{{A smaller percentage of items are remembered in a longer list, but as the length of the list increases, the absolute number of items remembered increases as well.[further explanation needed]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Misinformation effect}}}%
+\renewcommand{\stripnumber}{\#147}%
+\renewcommand{\descrtext}{{Memory becoming less accurate because of interference from post-event information.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Modality effect}}}%
+\renewcommand{\stripnumber}{\#148}%
+\renewcommand{\descrtext}{{That memory recall is higher for the last items of a list when the list items were received via speech than when they were received through writing.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Mood-congruent memory bias}}}%
+\renewcommand{\stripnumber}{\#149}%
+\renewcommand{\descrtext}{{The improved recall of information congruent with one's current mood.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Next-in-line effect}}}%
+\renewcommand{\stripnumber}{\#150}%
+\renewcommand{\descrtext}{{That a person in a group has diminished recall for the words of others who spoke immediately before himself, if they take turns speaking.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Part-list cueing effect}}}%
+\renewcommand{\stripnumber}{\#151}%
+\renewcommand{\descrtext}{{That being shown some items from a list and later retrieving one item causes it to become harder to retrieve the other items.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Peak–end rule}}}%
+\renewcommand{\stripnumber}{\#152}%
+\renewcommand{\descrtext}{{That people seem to perceive not the sum of an experience but the average of how it was at its peak (e.g., pleasant or unpleasant) and how it ended.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Persistence}}}%
+\renewcommand{\stripnumber}{\#153}%
+\renewcommand{\descrtext}{{The unwanted recurrence of memories of a traumatic event.[citation needed]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Picture superiority effect}}}%
+\renewcommand{\stripnumber}{\#154}%
+\renewcommand{\descrtext}{{The notion that concepts that are learned by viewing pictures are more easily and frequently recalled than are concepts that are learned by viewing their written word form counterparts.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Positivity effect}}}%
+\renewcommand{\stripnumber}{\#155}%
+\renewcommand{\descrtext}{{That older adults favor positive over negative information in their memories.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Primacy effect, Recency effect \& Serial position effect}}}%
+\renewcommand{\stripnumber}{\#156}%
+\renewcommand{\descrtext}{{That items near the end of a sequence are the easiest to recall, followed by the items at the beginning of a sequence; items in the middle are the least likely to be remembered.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Processing difficulty effect}}}%
+\renewcommand{\stripnumber}{\#157}%
+\renewcommand{\descrtext}{{That information that takes longer to read and is thought about more (processed with more difficulty) is more easily remembered.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Reminiscence bump}}}%
+\renewcommand{\stripnumber}{\#158}%
+\renewcommand{\descrtext}{{The recalling of more personal events from adolescence and early adulthood than personal events from other lifetime periods}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Rosy retrospection}}}%
+\renewcommand{\stripnumber}{\#159}%
+\renewcommand{\descrtext}{{The remembering of the past as having been better than it really was.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Self-relevance effect}}}%
+\renewcommand{\stripnumber}{\#160}%
+\renewcommand{\descrtext}{{That memories relating to the self are better recalled than similar information relating to others.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Source confusion}}}%
+\renewcommand{\stripnumber}{\#161}%
+\renewcommand{\descrtext}{{Confusing episodic memories with other information, creating distorted memories.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Spacing effect}}}%
+\renewcommand{\stripnumber}{\#162}%
+\renewcommand{\descrtext}{{That information is better recalled if exposure to it is repeated over a long span of time rather than a short one.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Spotlight effect}}}%
+\renewcommand{\stripnumber}{\#163}%
+\renewcommand{\descrtext}{{The tendency to overestimate the amount that other people notice your appearance or behavior.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Stereotypical bias}}}%
+\renewcommand{\stripnumber}{\#164}%
+\renewcommand{\descrtext}{{Memory distorted towards stereotypes (e.g., racial or gender), e.g., "black-sounding" names being misremembered as names of criminals.[unreliable source?]}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Suffix effect}}}%
+\renewcommand{\stripnumber}{\#165}%
+\renewcommand{\descrtext}{{Diminishment of the recency effect because a sound item is appended to the list that the subject is not required to recall.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Suggestibility}}}%
+\renewcommand{\stripnumber}{\#166}%
+\renewcommand{\descrtext}{{A form of misattribution where ideas suggested by a questioner are mistaken for memory.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Telescoping effect}}}%
+\renewcommand{\stripnumber}{\#167}%
+\renewcommand{\descrtext}{{The tendency to displace recent events backward in time and remote events forward in time, so that recent events appear more remote, and remote events, more recent.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Testing effect}}}%
+\renewcommand{\stripnumber}{\#168}%
+\renewcommand{\descrtext}{{The fact that you more easily remember information you have read by rewriting it instead of rereading it.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Tip of the tongue phenomenon}}}%
+\renewcommand{\stripnumber}{\#169}%
+\renewcommand{\descrtext}{{When a subject is able to recall parts of an item, or related information, but is frustratingly unable to recall the whole item. This is thought an instance of "blocking" where multiple similar memories are being recalled and interfere with each other.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Travis Syndrome}}}%
+\renewcommand{\stripnumber}{\#170}%
+\renewcommand{\descrtext}{{Overestimating the significance of the present. It is related to the enlightenment Idea of Progress and Chronological snobbery with possibly an appeal to novelty logical fallacy being part of the bias.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Verbatim effect}}}%
+\renewcommand{\stripnumber}{\#171}%
+\renewcommand{\descrtext}{{That the "gist" of what someone has said is better remembered than the verbatim wording. This is because memories are representations, not exact copies.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Von Restorff effect}}}%
+\renewcommand{\stripnumber}{\#172}%
+\renewcommand{\descrtext}{{That an item that sticks out is more likely to be remembered than other items}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+\renewcommand{\stripcolor}{memory}%
+\renewcommand{\striptext}{{\textsc{Zeigarnik effect}}}%
+\renewcommand{\stripnumber}{\#173}%
+\renewcommand{\descrtext}{{That uncompleted or interrupted tasks are remembered better than completed ones.}}%
+\begin{tikzpicture}%
+\draw[] (0,0)
+rectangle (\cardwidth,\cardheight); 
+% top filling for header
+\fill[\stripcolor]
+(\strippadding,\cardheight-\stripheight) rectangle
+(\cardwidth-\strippadding,\cardheight-\strippadding)
+% cognitive bias title
+(2*\strippadding, \cardheight-\stripheight+0.5)node[text width =
+(\cardwidth-3*\textpadding)*1cm, white,right,font=\stripfontsize] {\baselineskip=12pt\striptext\par}
+(\cardwidth-1.4, \cardheight-0.6)node[white,right,font=\stripfontsize] {\stripnumber};
+% description 
+\node[minimum width=(\cardwidth-2*\strippadding)*1cm, minimum height=(\contentheight)*1cm, text
+width=(\cardwidth-2*\strippadding -2*\textpadding)*1cm,below
+right,inner sep=0, fill=black!10, text justified] at
+(\strippadding,\cardheight-\stripheight-\textpadding) {\descrtext};
+\end{tikzpicture}%
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
