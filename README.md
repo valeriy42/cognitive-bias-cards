@@ -1,4 +1,4 @@
-Cognitve Bias Cards Generator
+Cognitive Bias Cards Generator
 ===============================
 
 This scripts create a deck of cards with description of different
